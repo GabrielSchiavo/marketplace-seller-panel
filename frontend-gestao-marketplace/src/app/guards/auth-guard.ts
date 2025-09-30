@@ -1,0 +1,34 @@
+import { CanActivateFn, Router } from '@angular/router';
+import { UserService } from '../services/user-service';
+import { inject } from '@angular/core';
+import { UserAuthService } from '../services/user-auth-service';
+import { firstValueFrom } from 'rxjs';
+
+export const authGuard: CanActivateFn = async (route, state) => {
+  const _userService = inject(UserService);
+  const _userAuthService = inject(UserAuthService);
+  const _router = inject(Router);
+
+  // Não possui token no localstorage
+  const HAS_TOKEN = _userAuthService.getUserToken();
+  if (!HAS_TOKEN) {
+    return _router.navigate(['/login']);
+  }
+
+  try {
+    // Tenta validar o token no backend
+    await firstValueFrom(_userService.validateUser());
+
+    // // Se o usuário está validado e a rota que ele está tentando acessar é a de login,
+    // // redireciona para a página de produtos
+    // if (state.url === '/login') {
+    //   return _router.navigate(['/products']);
+    // }
+
+    // Se o token é válido e a rota não é a de login, permite o acesso para a rota desejada.
+    return true;
+  } catch (error) {
+    // Se a requisição de validação falhar (token inválido), redireciona para o login
+    return _router.navigate(['/login']);
+  }
+};
