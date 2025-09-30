@@ -1,5 +1,5 @@
 {
-  "name": "backend-gestao-marketplace",
+  "name": "backend-marketplace-management-angular",
   "version": "1.0.0",
   "description": "Backend do desafio de lançamento do curso de Angular na Rocketseat",
   "main": "dist/server.js",
