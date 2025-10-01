@@ -3,6 +3,7 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
 import { UserService } from '../../services/user-service';
 import { UserAuthService } from '../../services/user-auth-service';
 import { Router } from '@angular/router';
+import { take } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -25,22 +26,25 @@ export class Login {
   login() {
     if (this.loginForm.invalid) return;
 
-    this._userService.login(
-      this.loginForm.get('email')?.value as string,
-      this.loginForm.get('password')?.value as string
-    ).subscribe({
-      next: (response) => {
-        this.loginErrorMessage = '';
+    this._userService
+      .login(
+        this.loginForm.get('email')?.value as string,
+        this.loginForm.get('password')?.value as string
+      )
+      .pipe(take(1))
+      .subscribe({
+        next: (response) => {
+          this.loginErrorMessage = '';
 
-        // Salvar o token no localstorage
-        this._userAuthService.setUserToken(response.data.token);
+          // Salvar o token no localstorage
+          this._userAuthService.setUserToken(response.data.token);
 
-        // Redirecionar para tela de produtos
-        this._router.navigate(['/products']);
-      },
-      error: (error) => {
-        this.loginErrorMessage = error.error.message;
-      },
-    });
+          // Redirecionar para tela de produtos
+          this._router.navigate(['/products']);
+        },
+        error: (error) => {
+          this.loginErrorMessage = error.error.message;
+        },
+      });
   }
 }

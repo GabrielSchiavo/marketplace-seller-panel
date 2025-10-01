@@ -1,7 +1,7 @@
 {
-  "name": "backend-marketplace-management-angular",
-  "version": "1.0.0",
-  "description": "Backend do desafio de lançamento do curso de Angular na Rocketseat",
+  "name": "marketplace-seller-panel-server",
+  "version": "1.0.1",
+  "description": "Server do Marketplace Seller Panel. Desenvolvido durante o Desafio Angular na Prática da Rocketseat",
   "main": "dist/server.js",
   "scripts": {
     "build": "tsc",

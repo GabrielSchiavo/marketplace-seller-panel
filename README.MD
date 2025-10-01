@@ -1,12 +1,12 @@
 <div align="center">
 
-# Marketplace Management Angular
+# Marketplace Seller Panel
 
 </div>
 
 <div align="center">
-    <!-- <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/> -->
-    <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge"/>
+    <!-- <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange?style=for-the-badge"/> -->
 </div>
 
 <div align="center">
@@ -28,11 +28,11 @@ O projeto é dividido em um frontend utilizando Angular e um backend utilizando 
 
 Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto o frontend em terminais separados.
 
-**Backend (Express):** localizado no diretório `/backend-gestao-marketplace`
+**Backend (Express):** localizado no diretório `/marketplace-seller-panel-server`
 
-**Frontend (Angular):** localizado no diretório `/frontend-gestao-marketplace`
+**Frontend (Angular):** localizado no diretório `/marketplace-seller-panel`
 
-**OBS.:** O arquivo `insomnia-backend.yaml`, localizado na pasta `backend-gestao-marketplace`, contém a coleção de endpoints que pode ser importada no Insomnia para os testes da API.
+**OBS.:** O arquivo `insomnia-backend.yaml`, localizado na pasta `marketplace-seller-panel-server`, contém a coleção de endpoints que pode ser importada no Insomnia para os testes da API.
 
 ### ⚠️ Pré-requisitos:
 
@@ -43,7 +43,7 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
 
 #### Backend (Express):
 
-1. Abra um terminal na pasta `backend-gestao-marketplace`.
+1. Abra um terminal na pasta `marketplace-seller-panel-server`.
    
 2. `Instalar dependências:`
    ```bash
@@ -59,7 +59,7 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
 
 #### Frontend (Angular):
 
-1. Abra um terminal na pasta `frontend-gestao-marketplace`.
+1. Abra um terminal na pasta `marketplace-seller-panel`.
    
 2. `Instalar dependências:`
    ```bash

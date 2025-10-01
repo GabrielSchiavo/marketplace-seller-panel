@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontend-gestao-marketplace": {
+    "marketplace-seller-panel": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "frontend-gestao-marketplace:build:production"
+              "buildTarget": "marketplace-seller-panel:build:production"
             },
             "development": {
-              "buildTarget": "frontend-gestao-marketplace:build:development"
+              "buildTarget": "marketplace-seller-panel:build:development"
             }
           },
           "defaultConfiguration": "development"
