@@ -1,6 +1,6 @@
 {
   "name": "marketplace-seller-panel",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Frontend do Marketplace Seller Panel. Desenvolvido durante o Desafio Angular na Prática da Rocketseat",
   "scripts": {
     "ng": "ng",

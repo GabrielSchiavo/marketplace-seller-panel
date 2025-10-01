@@ -30,6 +30,14 @@ O projeto é dividido em um frontend utilizando Angular e um backend utilizando 
 
 Todos os cadastros de usuários e produtos são salvos localmente em arquivos JSON.
 
+## 🎞️ Galeria
+
+<div align="center">
+  <img width="1000" src="./public/assets/screenshots/login.png" alt="Screenshot Login"/>
+  <img width="1000" src="./public/assets/screenshots/products.png" alt="Screenshot Produtos"/>
+  <img width="1000" src="./public/assets/screenshots/register-product.png" alt="Screenshot Cadastro Produtos"/>
+</div>
+
 ## ⚙️ Setup e Configuração
 
 Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto o frontend em terminais separados.
