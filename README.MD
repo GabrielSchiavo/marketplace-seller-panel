@@ -1,4 +1,8 @@
 <div align="center">
+    <img width="300" src="./public/assets/brand/combo-mark-full.png" alt="Logo"/>
+</div>
+
+<div align="center">
 
 # Marketplace Seller Panel
 
@@ -11,7 +15,7 @@
 
 <div align="center">
 
-Projeto desenvolvido durante o Desafio Angular na Prática da **Rocketseat**.
+Projeto desenvolvido utilizando Angular e Express durante o Desafio Angular na Prática da **Rocketseat**.
 
 </div>
 
