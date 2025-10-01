@@ -24,15 +24,17 @@ Este projeto é uma simulação de um sistema de gestão de produtos que inclui 
 
 O projeto é dividido em um frontend utilizando Angular e um backend utilizando Express.
 
+Todos os cadastros de usuários e produtos são salvos localmente em arquivos JSON.
+
 ## ⚙️ Setup e Configuração
 
 Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto o frontend em terminais separados.
 
 **Backend (Express):** localizado no diretório `/marketplace-seller-panel-server`
 
-**Frontend (Angular):** localizado no diretório `/marketplace-seller-panel`
+**Frontend (Angular):** localizado na raiz `/`
 
-**OBS.:** O arquivo `insomnia-backend.yaml`, localizado na pasta `marketplace-seller-panel-server`, contém a coleção de endpoints que pode ser importada no Insomnia para os testes da API.
+**OBS.:** O arquivo `marketplace-seller-panel-server.postman_collection.json`, localizado na pasta `marketplace-seller-panel-server`, contém a coleção de endpoints que podem ser importados no Postman para os testes da API.
 
 ### ⚠️ Pré-requisitos:
 
@@ -59,7 +61,7 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
 
 #### Frontend (Angular):
 
-1. Abra um terminal na pasta `marketplace-seller-panel`.
+1. Abra um terminal na raiz `/`.
    
 2. `Instalar dependências:`
    ```bash
@@ -71,12 +73,44 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
    ng serve
    ```
 
-4. Acesse a aplicação em `http://localhost:4200/`
+4. Acesse a aplicação em `http://localhost:4200/login`
+   
+5. Login padrão: 
+   - **Email:** example@example.com
+   - **Senha:** 12345
+
+#### Produção:
+1. Alterar URL base:
+   - Altere a variável `apiUrl` em `/src/environments/environment.ts` para URL desejada.
+
+## 🌐 Rotas Disponíveis
+#### Backend (http://localhost:3000):
+
+- `/` - Rota para verificar se o servidor está em execução;
+- `/api/protected` - Rotas protegidas;
+- `/api/products/` - Rota para obter  os produtos;
+- `/api/products/register` - Rota para cadastrar um novo produto;
+- `/api/products/:id` - Rota para editar um produto por ID;
+- `/api/users/login` - Rota para login do usuário;
+- `/api/users/register` - Rota para cadastrar um novo usuário;
+- `/api/users/profile` - Rota para obter o perfil do usuário autenticado;
+
+#### Frontend (http://localhost:4200):
+
+- `/login` - Formulário de Login;
+- `/products` - Lista de produtos cadastrados;
+- `/new-product` - Formulário para cadastro de produtos;
 
 ## ⚡ Scripts Disponíveis
 
-- `npm run dev` - Inicia o servidor Express
-- `ng serve` - Inicia a aplicação Angular
+- `npm run dev` - Inicia o servidor de desenvolvimento local do Express
+- `ng serve` - Inicia o servidor de desenvolvimento local do Angular
+- `ng build` - Compila o projeto Angular para produção
+- `ng test` - Executa os testes unitários com o Karma
+- `ng e2e` - Executa os testes end-to-end
+- `ng g component component-name` - Gera um novo componente Angular
+- `ng g component component-name --skip-tests=true` - Gera um novo componente Angular sem testes unitários
+- `ng g --help` - Exibe a lista de comandos disponíveis
 
 ## ✅ Tecnologias utilizadas
 

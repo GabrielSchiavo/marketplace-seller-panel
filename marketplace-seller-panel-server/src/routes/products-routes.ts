@@ -8,7 +8,7 @@ const router = Router();
 router.get('/', authenticateToken, getProducts);
 
 // Rota para cadastrar um novo produto
-router.post('/', authenticateToken, createProduct);
+router.post('/register', authenticateToken, createProduct);
 
 // Rota para editar um produto por ID
 router.put('/:id', authenticateToken, updateProduct);

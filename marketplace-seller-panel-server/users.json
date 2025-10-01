@@ -1,12 +1,7 @@
 [
   {
     "id": 1,
-    "email": "novo@example.com",
-    "password": "$2b$10$G/AWJa9n6GoXbN2JjU5YpuBZum/GbtWZR0J76mhVHgTlyMzwEFAm."
-  },
-  {
-    "id": 2,
-    "email": "teste@example.com",
-    "password": "$2b$10$yhpj9DISymZn9JTTwV2YweBNveeKFfsPr6wm3D8PgwAH4JB74IIP6"
+    "email": "example@example.com",
+    "password": "$2b$10$2b3gP8/7BjuZs2leHSurL.fbNastA.H3poKbdILphriIMMYL8GWfW"
   }
 ]

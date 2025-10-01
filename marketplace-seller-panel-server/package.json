@@ -1,6 +1,6 @@
 {
   "name": "marketplace-seller-panel-server",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Server do Marketplace Seller Panel. Desenvolvido durante o Desafio Angular na Prática da Rocketseat",
   "main": "dist/server.js",
   "scripts": {
