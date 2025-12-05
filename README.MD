@@ -82,7 +82,7 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
 
 3. `Iniciar a aplicação:`
    ```bash
-   ng serve
+   npm start
    ```
 
 4. Acesse a aplicação em `http://localhost:4200/login`
