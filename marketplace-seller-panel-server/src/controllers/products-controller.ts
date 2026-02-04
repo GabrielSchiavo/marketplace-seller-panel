@@ -94,7 +94,7 @@ export const updateProduct = (req: Request, res: Response): void => {
     const updateData = req.body;
 
     const products = loadProducts();
-    const productIndex = products.findIndex(p => p.id === parseInt(id));
+    const productIndex = products.findIndex(p => p.id === parseInt(id as string));
 
     if (productIndex === -1) {
       res.status(404).json({

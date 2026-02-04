@@ -1,6 +1,6 @@
 {
   "name": "marketplace-seller-panel-server",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Server do Marketplace Seller Panel. Desenvolvido durante o Desafio Angular na Prática da Rocketseat",
   "main": "dist/server.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^6.0.0",
-    "cors": "^2.8.5",
+    "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3"
@@ -23,7 +23,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^24.10.1",
+    "@types/node": "^25.2.0",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.9.3"
