@@ -61,12 +61,12 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
    
 2. `Instalar dependências:`
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. `Iniciar o servidor:`
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 
 4. Acesse o servidor em `http://localhost:3000`
@@ -77,12 +77,12 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
    
 2. `Instalar dependências:`
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. `Iniciar a aplicação:`
    ```bash
-   npm start
+   pnpm start
    ```
 
 4. Acesse a aplicação em `http://localhost:4200/login`
@@ -115,7 +115,7 @@ Para rodar a aplicação, você deve iniciar tanto o servidor do backend quanto 
 
 ## ⚡ Scripts Disponíveis
 
-- `npm run dev` - Inicia o servidor de desenvolvimento local do Express
+- `pnpm dev` - Inicia o servidor de desenvolvimento local do Express
 - `ng serve` - Inicia o servidor de desenvolvimento local do Angular
 - `ng build` - Compila o projeto Angular para produção
 - `ng test` - Executa os testes unitários com o Karma
